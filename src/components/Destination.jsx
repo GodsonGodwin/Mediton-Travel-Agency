@@ -20,19 +20,19 @@ const Destination = () => {
             <div>
                 <img src={train} alt='Travel By Train'/>
                <h3> 24/7 Services available </h3>
-                <p>Safe and comfortable for your Journey</p>
+                <p>Safe and comfortable for your Journey...</p>
             </div>
 
             <div>
                 <img src={ship} alt='Travel by Ship'/>
                <h3>Maritime Transportation</h3>
-                <p>Experience the wonders of the sea in your next Journey</p>
+                <p>Experience the wonders of the sea in your next Journey...</p>
             </div>
 
             <div>
                 <img src={taxi} alt='Travel By taxi'/>
                <h3>Our drivers are always close to your door</h3>
-                <p>No reckless driving, your safety is our priority</p>
+                <p>No reckless driving, your safety is our priority...</p>
             </div>
         </div>
     </section>

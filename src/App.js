@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Switch,
+  
 } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -12,26 +12,31 @@ import Destination from "./components/Destination";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Footer from "./components/Footer";
+import Plan from "./components/Plan";
+
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Route exact path="/">
-          <ShowCase />
-          <Destination/>
-        </Route>
 
-        <Route path="/login">
-          <Login />
-        </Route>
+        <div className="container">
 
-        <Route path="/signup">
-          <SignUp />
-        </Route>
+        <Routes>
+          <Route path="/" element={<><ShowCase/> <Destination/><Plan/></>} />
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<SignUp/> }/>
+
+        </Routes>
+
+        
 
         <Footer />
+
+        </div>
+
+        
       </Router>
     </>
   );
