@@ -1,16 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import mediton from '../assets/mediton.png'
+
 const Navbar =() => {
   return (
     <>   
     <header className='header'>
-      <div>
-        <Link className='links' to='/'>Home</Link>
+     
+      <div> 
+      <img src={mediton} alt='Brand Logo'/>
       </div>
 
       <nav className='navbar'>
         <ul>
+          <Link className='links' to='/'>Home</Link>
           <Link className='links' to='/login'>Login</Link>
           <Link className='links' to='/signup'>Sign Up</Link>
         </ul>
