@@ -13,6 +13,7 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Footer from "./components/Footer";
 import Plan from "./components/Plan";
+import Profile from "./components/Profile";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<><ShowCase/> <Destination/><Plan/></>} />
           <Route path="/login" element={<Login/>}/>
           <Route path="/signup" element={<SignUp/> }/>
+          <Route path="/profile" element={<Profile/> }/>
 
         </Routes>
 
